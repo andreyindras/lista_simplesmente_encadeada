@@ -21,15 +21,23 @@ Essa estrutura forma a **base da lista encadeada**.
 
 ---
 
-Claro! Aqui vai uma explicação **mais clara, detalhada e didática** da parte **2. Construção dinâmica da lista com `ListaSimplesmenteEncadeada`**:
+### 📄 2. Leitura de dados com `LeitorArquivo`
+
+Antes de inserir os pontos na lista, o programa realiza a leitura do arquivo `pontos_de_descartes.txt`. Cada linha do arquivo representa um ponto de descarte e contém seus dados separados por vírgula:
+
+```java
+String[] partes = linha.split(",");
+```
+
+A partir dessas partes (`id`, `endereco`, `material`), um novo objeto `PontoDescarte` é criado e enviado para inserção na lista encadeada.
+
+Esse processo garante que os dados sejam tratados de forma estruturada e dinâmica, sem depender de coleções prontas.
 
 ---
 
-### 🔧 2. Construção dinâmica da lista com `ListaSimplesmenteEncadeada`
+### 🔧 3. Construção dinâmica da lista com `ListaSimplesmenteEncadeada`
 
-Para armazenar os pontos de descarte de forma dinâmica, foi implementada manualmente uma **lista simplesmente encadeada** — uma estrutura de dados onde **cada elemento (ou “nó”) aponta para o próximo**, formando uma cadeia de ligações.
-
-Em vez de usar estruturas prontas como `ArrayList`, a lista encadeada foi escolhida para demonstrar como funciona o controle direto da memória e do encadeamento dos dados.
+Para armazenar os pontos de descarte, foi implementada manualmente uma **lista simplesmente encadeada** — uma estrutura onde **cada elemento aponta para o próximo**, formando uma sequência de nós.
 
 ---
 
@@ -92,27 +100,13 @@ Cada novo ponto é adicionado ao final, **mantendo a ordem de chegada** e criand
 
 ---
 
-### 3. **Leitura de dados com `LeitorArquivo`**
-
-A leitura do arquivo `pontos_de_descartes.txt` é feita linha por linha. Cada linha é dividida em três partes:
-
-```java
-String[] partes = linha.split(",");
-```
-
-A partir dessas partes, criamos um novo `PontoDescarte` e **o inserimos na lista**.
-
-Aqui, a lógica importante é que os dados não são armazenados em listas prontas, mas sim na **estrutura encadeada criada anteriormente**.
-
----
-
 ### 🔍 4. Filtragem com base no material
 
 Após o usuário escolher o tipo de material que deseja buscar (Plástico, Vidro ou Eletrônicos), o programa precisa **procurar dentro da lista apenas os pontos de descarte que aceitam esse material específico**.
 
 #### 📌 Como isso funciona?
 
-A lista de pontos de descarte foi construída como uma **lista simplesmente encadeada**, ou seja, cada elemento da lista (cada `PontoDescarte`) aponta para o próximo, formando uma cadeia de elementos.
+A lista foi construída como uma **lista simplesmente encadeada**, ou seja, cada elemento da lista (cada `PontoDescarte`) aponta para o próximo.
 
 Para fazer a filtragem, usamos um **laço `while`** que percorre a lista do início até o fim, verificando o valor do campo `material` de cada nó.
 
@@ -141,16 +135,16 @@ while (temp != null) {
 
 ---
 
-### 5. **Interação com o usuário em `Main`**
+### 🧑‍💻 5. Interação com o usuário em `Main`
 
-O fluxo principal é guiado por:
+O fluxo principal do programa segue os seguintes passos:
 
 - Leitura do arquivo com os pontos de descarte.
 - Apresentação de um menu simples para o usuário.
 - Conversão da opção numérica para o material correspondente.
-- Exibição dos pontos filtrados.
+- Filtragem e exibição dos pontos compatíveis com o material escolhido.
 
-A lógica aqui se resume a **coletar uma entrada do usuário** e repassar essa informação como critério para filtrar a lista.
+A lógica aqui se resume a **coletar uma entrada do usuário** e repassar essa informação como critério para buscar na lista.
 
 ---
 
@@ -160,6 +154,8 @@ A lógica aqui se resume a **coletar uma entrada do usuário** e repassar essa i
 Arquivo .txt
    ↓
 Leitura linha a linha
+   ↓
+Criação de objetos PontoDescarte
    ↓
 Inserção em uma lista encadeada
    ↓
@@ -178,3 +174,5 @@ A opção por uma **lista simplesmente encadeada** foi feita com fins didáticos
 - Encadeamento de elementos
 - Percurso sequencial
 - Estrutura de nós interligados
+
+Essa abordagem ajuda a desenvolver uma base sólida em **estruturas de dados**, essencial para programadores que desejam compreender o funcionamento interno das coleções de forma mais profunda.
