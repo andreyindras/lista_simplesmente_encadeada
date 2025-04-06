@@ -1,7 +1,7 @@
 # Lista Simplesmente Encadeada
 
 
-# ♻️ Sistema de Consulta de Pontos de Descarte
+## ♻️ Sistema de Consulta de Pontos de Descarte
 
 Este projeto em Java foi desenvolvido com o objetivo de simular um sistema de **busca de locais de descarte de materiais recicláveis**, utilizando como estrutura de dados uma **lista simplesmente encadeada**.
 
@@ -51,17 +51,38 @@ Aqui, a lógica importante é que os dados não são armazenados em listas pront
 
 ---
 
-### 4. **Filtragem com base no material**
+### 🔍 4. Filtragem com base no material
 
-Quando o usuário escolhe um tipo de material (Plástico, Vidro ou Eletrônicos), o programa percorre a lista do início ao fim. A lógica da filtragem é simples:
+Após o usuário escolher o tipo de material que deseja buscar (Plástico, Vidro ou Eletrônicos), o programa precisa **procurar dentro da lista apenas os pontos de descarte que aceitam esse material específico**.
+
+#### 📌 Como isso funciona?
+
+A lista de pontos de descarte foi construída como uma **lista simplesmente encadeada**, ou seja, cada elemento da lista (cada `PontoDescarte`) aponta para o próximo, formando uma cadeia de elementos.
+
+Para fazer a filtragem, usamos um **laço `while`** que percorre a lista do início até o fim, verificando o valor do campo `material` de cada nó.
+
+#### 💡 Lógica aplicada:
 
 ```java
-if (temp.material.equals(materialBusca)) {
-    // exibe as informações
+PontoDescarte temp = inicio;
+
+while (temp != null) {
+    if (temp.material.equals(materialBusca)) {
+        // exibe as informações do ponto
+    }
+    temp = temp.proximo;
 }
 ```
 
-Ou seja, **somente os pontos com o material correspondente são mostrados**.
+#### 🔄 O que acontece aqui, passo a passo:
+
+1. A variável `temp` começa apontando para o primeiro elemento da lista (`inicio`).
+2. O laço `while` continua enquanto `temp` não for `null` (ou seja, enquanto não chegarmos ao fim da lista).
+3. Em cada iteração:
+   - Verificamos se o `material` do ponto atual é **igual ao material escolhido pelo usuário**.
+   - Se for igual, **exibimos as informações** daquele ponto (ID, Endereço e Material).
+   - Se for diferente, apenas seguimos para o próximo nó (`temp = temp.proximo`).
+4. O processo continua até percorrer todos os pontos cadastrados na lista.
 
 ---
 
@@ -102,11 +123,3 @@ A opção por uma **lista simplesmente encadeada** foi feita com fins didáticos
 - Encadeamento de elementos
 - Percurso sequencial
 - Estrutura de nós interligados
-
----
-
-## 💡 Conclusão
-
-Este projeto une conceitos de estrutura de dados, leitura de arquivos e interação com o usuário em um cenário prático de **sustentabilidade**, simulando um sistema de consulta de pontos de descarte de materiais recicláveis.
-
-Se quiser, posso gerar esse texto em formato Markdown para você colar direto no `README.md`. Quer que eu faça isso?
