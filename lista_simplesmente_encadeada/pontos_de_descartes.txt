@@ -1,0 +1,50 @@
+001,Rua das Flores 123 - Centro,Plástico
+002,Avenida Brasil 456 - Jardim América,Vidro
+003,Travessa da Paz 789 - Vila Nova,Eletrônicos
+004,Praça da República 101 - Centro,Plástico
+005,Rua dos Coqueiros 202 - Zona Norte,Vidro
+006,Avenida Paulista 303 - Bela Vista,Eletrônicos
+007,Rua das Palmeiras 404 - Jardim Paulista,Plástico
+008,Alameda Santos 505 - Cerqueira César,Vidro
+009,Rua Augusta 606 - Consolação,Eletrônicos
+010,Avenida Rebouças 707 - Pinheiros,Plástico
+011,Rua Oscar Freire 808 - Jardins,Vidro
+012,Avenida Europa 909 - Jardim Europa,Eletrônicos
+013,Rua Haddock Lobo 111 - Cerqueira César,Plástico
+014,Alameda Jaú 222 - Jardim Paulista,Vidro
+015,Rua Bela Cintra 333 - Consolação,Eletrônicos
+016,Avenida Brigadeiro Faria Lima 444 - Itaim Bibi,Plástico
+017,Rua Joaquim Floriano 555 - Itaim Bibi,Vidro
+018,Avenida Presidente Juscelino Kubitschek 666 - Itaim Bibi,Eletrônicos
+019,Rua Funchal 777 - Vila Olímpia,Plástico
+020,Alameda Rio Negro 888 - Alphaville,Vidro
+021,Rua Alexandre Dumas 999 - Chácara Santo Antônio,Eletrônicos
+022,Avenida Morumbi 121 - Brooklin,Plástico
+023,Rua dos Pinheiros 232 - Pinheiros,Vidro
+024,Avenida Santo Amaro 343 - Santo Amaro,Eletrônicos
+025,Rua da Consolação 454 - República,Plástico
+026,Avenida Angélica 565 - Higienópolis,Vidro
+027,Rua Maria Antônia 676 - Vila Buarque,Eletrônicos
+028,Avenida São João 787 - Centro,Plástico
+029,Rua Líbero Badaró 898 - Centro,Vidro
+030,Avenida Ipiranga 919 - República,Eletrônicos
+031,Rua Xavier de Toledo 131 - República,Plástico
+032,Avenida 9 de Julho 242 - Bela Vista,Vidro
+033,Rua da Glória 353 - Glória,Eletrônicos
+034,Avenida Pacaembu 464 - Pacaembu,Plástico
+035,Rua Turiassu 575 - Perdizes,Vidro
+036,Avenida Sumaré 686 - Perdizes,Eletrônicos
+037,Rua Cardoso de Almeida 797 - Perdizes,Plástico
+038,Avenida Francisco Matarazzo 808 - Água Branca,Vidro
+039,Rua Guaicurus 919 - Água Branca,Eletrônicos
+040,Avenida Pompéia 141 - Pompéia,Plástico
+041,Rua Clélia 252 - Lapa,Vidro
+042,Avenida Ermano Marchetti 363 - Lapa,Eletrônicos
+043,Rua Guará 474 - Jaguaré,Plástico
+044,Avenida Jaguaré 585 - Jaguaré,Vidro
+045,Rua Coropés 696 - Butantã,Eletrônicos
+046,Avenida Vital Brasil 707 - Butantã,Plástico
+047,Rua Alvarenga 818 - Butantã,Vidro
+048,Avenida Prof. Luciano Gualberto 929 - Butantã,Eletrônicos
+049,Rua do Matão 151 - Cidade Universitária,Plástico
+050,Avenida Lineu de Paula Machado 262 - Cidade Jardim,Vidro
