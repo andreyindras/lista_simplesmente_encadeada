@@ -1,7 +1,4 @@
-# Lista Simplesmente Encadeada
-
-
-## ♻️ Sistema de Consulta de Pontos de Descarte
+# ♻️ Sistema de Consulta de Pontos de Descarte
 
 Este projeto em Java foi desenvolvido com o objetivo de simular um sistema de **busca de locais de descarte de materiais recicláveis**, utilizando como estrutura de dados uma **lista simplesmente encadeada**.
 
