@@ -1,6 +1,5 @@
 # Lista Simplesmente Encadeada
 
----
 
 # ♻️ Sistema de Consulta de Pontos de Descarte
 
