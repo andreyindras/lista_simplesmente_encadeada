@@ -163,16 +163,3 @@ Usuário escolhe tipo de material
    ↓
 Percorre a lista e exibe apenas os pontos que aceitam o material escolhido
 ```
-
----
-
-## 🎯 Por que usar lista encadeada?
-
-A opção por uma **lista simplesmente encadeada** foi feita com fins didáticos, para reforçar os conceitos de:
-
-- Alocação dinâmica de memória
-- Encadeamento de elementos
-- Percurso sequencial
-- Estrutura de nós interligados
-
-Essa abordagem ajuda a desenvolver uma base sólida em **estruturas de dados**, essencial para programadores que desejam compreender o funcionamento interno das coleções de forma mais profunda.
